@@ -58,13 +58,13 @@
 
    10\) run ganache and truffle
     
-      \(1\) add the below config to tuffle-config.js
+      (1\) add the below config to tuffle-config.js
 
-         ```bash
+          ```javascript
          ganache: {
-         host: "127.0.0.1", // Localhost (default: none)
-         port: 8545, // Standard Ethereum port (default: none)
-         network_id: "\*", // Any network (default: none)
+            host: "127.0.0.1", // Localhost (default: none)
+            port: 8545, // Standard Ethereum port (default: none)
+            network_id: "\*", // Any network (default: none)
          },
          ```
 
@@ -74,7 +74,7 @@
 
       \(4\) run 'truffle console --network garache' - interact with contracts on ganache
 
-         ```bash
+          ```javascript
          truffle(ganache)> web3.eth.getAccounts()
          truffle(ganache)> const spacebearInstance = await Spacebear.deployed()
          truffle(ganache)> spacebearInstance.name()
