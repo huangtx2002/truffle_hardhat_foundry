@@ -7,59 +7,90 @@
       npm -v<br>
       ```
 
-2) install git - under linux ubuntu
-   apt update
-   apt install git
-   git --version
+   2\) install git - under linux ubuntu
+   
+      ```bash
+      apt update
+      apt install git
+      git --version
+      ```
 
-3) install Visual Studi Code - VS Code
-   install extesions - Solidity Visual Developer, Solity Juan Blanco, DotENV, Dracula Official
+   3\) install Visual Studi Code - VS Code
+   
+      ```bash
+      install extesions - Solidity Visual Developer, Solity Juan Blanco, DotENV, Dracula Official
+      ```
 
-4) install truffle
-   npm install -g truffle
+   4\) install truffle
+   
+      ```bash
+      npm install -g truffle
+      ```
 
-5) init a truffle project
-   truffle init
-   npm init -y
-   npm install --save @openzeppelin/contracts
+   5\) init a truffle project
+      
+      ```bash
+      truffle init
+      npm init -y
+      npm install --save @openzeppelin/contracts
+      ```
 
-6) add .sol files to folder contracts
+   6\) add .sol files to folder contracts
 
-7) compile contracts
-   truffle compile
+   7\) compile contracts
+   
+      ```bash
+      truffle compile
+      ```
 
-8) deploy contracts
-   add deployment.js to folder migrations
-   truffle develop - run migrate command on the CLI
+   8\) deploy contracts
+   
+      ```bash
+      add deployment.js to folder migrations
+      truffle develop - run migrate command on the CLI
+      ```
 
-9) install ganache
-   npm install --global ganache
+   9\) install ganache
+   
+      ```bash
+      npm install --global ganache
+      ```
 
-10) run ganache and truffle
-    (1) add the below config to tuffle-config.js
-    ==================
-    ganache: {
-    host: "127.0.0.1", // Localhost (default: none)
-    port: 8545, // Standard Ethereum port (default: none)
-    network_id: "\*", // Any network (default: none)
-    },
-    ===================
+   10\) run ganache and truffle
+    
+      \(1\) add the below config to tuffle-config.js
 
-(2) run ganache command on terminal
+         ```bash
+         ganache: {
+         host: "127.0.0.1", // Localhost (default: none)
+         port: 8545, // Standard Ethereum port (default: none)
+         network_id: "\*", // Any network (default: none)
+         },
+         ```
 
-(3) run 'truffle migrate --network ganache' - deploy contract to ganache
+      \(2\) run ganache command on terminal
 
-(4) run 'truffle console --network garache' - interact with contracts on ganache
-truffle(ganache)> web3.eth.getAccounts()
-truffle(ganache)> const spacebearInstance = await Spacebear.deployed()
-truffle(ganache)> spacebearInstance.name()
-truffle(ganache)> const accounts = await web3.eth.getAccounts()
-truffle(ganache)> await spacebearInstance.safeMint(accounts[1], "spacebear_1.json")
-truffle(ganache)> spacebearInstance.ownerOf(0)
-truffle(ganache)> accounts[1]
-truffle(ganache)> spacebearInstance.tokenURI(0)
+      \(3\) run 'truffle migrate --network ganache' - deploy contract to ganache
+
+      \(4\) run 'truffle console --network garache' - interact with contracts on ganache
+
+         ```bash
+         truffle(ganache)> web3.eth.getAccounts()
+         truffle(ganache)> const spacebearInstance = await Spacebear.deployed()
+         truffle(ganache)> spacebearInstance.name()
+         truffle(ganache)> const accounts = await web3.eth.getAccounts()
+         truffle(ganache)> await spacebearInstance.safeMint(accounts[1], "spacebear_1.json")
+         truffle(ganache)> spacebearInstance.ownerOf(0)
+         truffle(ganache)> accounts[1]
+         truffle(ganache)> spacebearInstance.tokenURI(0)
+         ```
 
 2. unit tests
-    (1) build unit tests js file under folder test
-    (2) run unit tests
-    truffle(ganache)> test
+
+    \(1\) build unit tests js file under folder test
+
+    \(2\) run unit tests
+
+      ```bash
+      truffle(ganache)> test
+      ```
