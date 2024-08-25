@@ -1,10 +1,8 @@
 1. setup env
 
-1) download/install nodejs - https://nodejs.org/en
-
-   node -v
-
-   npm -v
+1\) download/install nodejs - https://nodejs.org/en<br>
+   node -v<br>
+   npm -v<br>
 
 2) install git - under linux ubuntu
    apt update
