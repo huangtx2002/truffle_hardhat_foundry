@@ -58,7 +58,7 @@
 
    10\) run ganache and truffle
     
-      (1\) add the below config to tuffle-config.js
+      - add the below config to tuffle-config.js
 
          ```bash
          ganache: {
@@ -68,11 +68,11 @@
          },
          ```
 
-      \(2\) run ganache command on terminal
+      - run ganache command on terminal
 
-      \(3\) run 'truffle migrate --network ganache' - deploy contract to ganache
+      - run 'truffle migrate --network ganache' - deploy contract to ganache
 
-      \(4\) run 'truffle console --network garache' - interact with contracts on ganache
+      - run 'truffle console --network garache' - interact with contracts on ganache
 
          ```bash
          truffle(ganache)> web3.eth.getAccounts()
@@ -87,9 +87,9 @@
 
 2. unit tests
 
-    \(1\) build unit tests js file under folder test
+   1\) build unit tests js file under folder test
 
-    \(2\) run unit tests
+   2\) run unit tests
 
       ```bash
       truffle(ganache)> test
