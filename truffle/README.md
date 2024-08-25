@@ -1,7 +1,9 @@
 1. setup env
 
 1) download/install nodejs - https://nodejs.org/en
+
    node -v
+
    npm -v
 
 2) install git - under linux ubuntu
@@ -56,7 +58,7 @@ truffle(ganache)> spacebearInstance.ownerOf(0)
 truffle(ganache)> accounts[1]
 truffle(ganache)> spacebearInstance.tokenURI(0)
 
-11. unit tests
+2. unit tests
     (1) build unit tests js file under folder test
     (2) run unit tests
     truffle(ganache)> test
