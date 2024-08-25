@@ -1,5 +1,15 @@
 1. setup env
 
+   1) download/install nodejs - [https://nodejs.org/en](https://nodejs.org/en)
+   
+      ```bash
+      node -v
+      npm -v
+      ```
+
+
+1. setup env
+
 1\) download/install nodejs - https://nodejs.org/en<br>
    node -v<br>
    npm -v<br>
